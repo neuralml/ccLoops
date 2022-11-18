@@ -1,0 +1,79 @@
+{
+  "dataset": {
+    "fixdata": false,
+    "input_D": 10,
+    "max_value": 1,
+    "min_value": 0,
+    "npoints": 2,
+    "seq_len": 15,
+    "test_noise_var": 0.1,
+    "test_size": 1000,
+    "train_noise_var": 0.1,
+    "train_val_split": 0.2,
+    "training_size": 1000,
+    "window_size": 5
+  },
+  "model": {
+    "alpha": 0.1,
+    "apply_cerebellum": true,
+    "bias": false,
+    "cereb_params": {
+      "IO_delays": {
+        "MC_IO_delay": 3,
+        "PFC_IO_delay": 5,
+        "inp_IO_delay": 2,
+        "targ_IO_delay": 3
+      },
+      "IO_sizes": {
+        "MC_IO_size": 0,
+        "PFC_IO_size": 0,
+        "inp_IO_size": 0,
+        "targ_IO_size": null
+      },
+      "bias": false,
+      "do_final_learning": false,
+      "fixed_MF": true,
+      "hidden_size": 1000,
+      "nfibres": null,
+      "nonlin": "relu",
+      "num_hidden_layers": 1,
+      "pons_sizes": {
+        "MC_pons_size": 0,
+        "PFC_pons_size": null,
+        "inp_pons_size": 0,
+        "targ_pons_size": 0
+      },
+      "zero_output": false,
+      "softmax": true
+    },
+    "evec_scale": null,
+    "fixed_rnn": "inp_only",
+    "hidden_size": 50,
+    "input_size": 2,
+    "n_layers": 1,
+    "output_size": 1,
+    "readout_from_cereb": false,
+    "rnn_type": "RNN_eprop"
+  },
+  "no_cuda": false,
+  "save_folder": "/user/work/oq19042/eprop_cerebellum/results/delass/sims/temp",
+  "seed": 857,
+  "task_name": "delass",
+  "training": {
+    "batch_size": 10,
+    "clip": 1.0,
+    "decay_lr": false,
+    "early_stopping": false,
+    "epochs": 250,
+    "keep_hidden": false,
+    "l2_norm": 0.0,
+    "lr_cerebellum": 0.001,
+    "lr_decay_patience": 10,
+    "lr_readout": 0.001,
+    "lr_rnn": 0.0025,
+    "lr_scale": 0.1,
+    "noisy": false,
+    "optimizer": "adam",
+    "rate_reg": 0.0
+  }
+}

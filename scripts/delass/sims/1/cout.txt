@@ -1,0 +1,5 @@
+INFO - delass - Running command 'main'
+INFO - delass - Started run with ID "2460"
+/user/home/oq19042/eprop_cerebellum/scripts/delass.py:188: RuntimeWarning: Mean of empty slice
+  loss_epoch = np.nanmean(error_list)
+INFO - delass - Completed after 0:16:50

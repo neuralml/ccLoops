@@ -1,0 +1,17 @@
+#delayed association task
+
+seq_len: 15
+training_size: 1000
+test_size: 1000
+train_val_split: 0.2
+fixdata: False
+train_noise_var: 0.1
+test_noise_var: 0.1
+input_D: 10
+npoints: 2
+min_value: 0
+max_value: 1
+window_size: 5
+
+
+

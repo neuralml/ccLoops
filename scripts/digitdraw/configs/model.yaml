@@ -1,0 +1,36 @@
+# Baseline RNN model configuration
+
+rnn_type: 'RNN_eprop'
+n_layers: 1
+hidden_size: 50
+input_size: 2
+output_size: 1
+evec_scale: null
+readout_from_cereb: False
+apply_cerebellum: False
+bias: False
+fixed_rnn: True
+alpha: 0.1
+cereb_params: 
+ pons_sizes:
+  PFC_pons_size: null
+  MC_pons_size: 0
+  targ_pons_size: 0
+  inp_pons_size: 0
+ IO_sizes:
+  PFC_IO_size: 0
+  MC_IO_size: 0
+  targ_IO_size: null
+  inp_IO_size: 0
+ IO_delays:
+  PFC_IO_delay: 5
+  MC_IO_delay: 3
+  targ_IO_delay: 3
+  inp_IO_delay: 2  
+ hidden_size: 1000
+ num_hidden_layers: 1
+ nfibres: null
+ zero_output: False
+ bias: False
+ do_final_learning: False
+ temp_basis: True

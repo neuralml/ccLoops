@@ -1,0 +1,90 @@
+{
+  "artifacts": [
+    "final-model.pt",
+    "best-model.pt"
+  ],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/user/home/oq19042/eprop_cerebellum/scripts",
+    "dependencies": [
+      "ignite==1.1.0",
+      "munch==2.5.0",
+      "numpy==1.18.1",
+      "sacred==0.8.1",
+      "torch==1.6.0",
+      "tqdm==4.42.1"
+    ],
+    "mainfile": "delass.py",
+    "name": "delass",
+    "repositories": [],
+    "sources": [
+      [
+        "delass.py",
+        "_sources/delass_e24ef06fb5259c754011b8301aac0e21.py"
+      ],
+      [
+        "ingredients/dataset.py",
+        "_sources/dataset_9d20ed5f8f497a3e67b7f6da102582e6.py"
+      ],
+      [
+        "ingredients/model.py",
+        "_sources/model_cb24afeee85c5ebee630b21dcfefcc08.py"
+      ],
+      [
+        "ingredients/training.py",
+        "_sources/training_fb3efb363962425ed9ffca30b71502e6.py"
+      ]
+    ]
+  },
+  "heartbeat": "2022-05-12T19:05:51.442633",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Silver 4112 CPU @ 2.60GHz",
+    "hostname": "bp1-gpu004.data.bp.acrc.priv",
+    "os": [
+      "Linux",
+      "Linux-3.10.0-1160.45.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core"
+    ],
+    "python_version": "3.7.6"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "dataset.seq_len=15",
+        "model.apply_cerebellum=True",
+        "model.cereb_params.hidden_size=1000",
+        "model.fixed_rnn=inp_only",
+        "training.lr_rnn=0.0025",
+        "seed=857"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2022-05-12T18:49:01.251435",
+  "status": "COMPLETED",
+  "stop_time": "2022-05-12T19:05:51.436493"
+}
