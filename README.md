@@ -12,4 +12,4 @@ Scripts to run the tasks presented in the paper can be found in the /scripts fol
 2. Define the OBSERVE variable (preset to False). If true, then experiment results will be saved in a generated /sims folder.
 3. Run the script
 
-* For the consolidation script (in /delass) it's only necessary to define the path to the pretrained model. At the moment this points to /delass/sims/1. 
+*For the consolidation script (in /delass) it's only necessary to define the path to the pretrained model. At the moment this points to /delass/sims/1. 
