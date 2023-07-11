@@ -1,0 +1,18 @@
+commands to set up conda environment and install relevant packages:
+
+conda create --name ccLoops
+conda activate ccLoops
+
+conda install jupyter notebook
+conda install -c pytorch ignite
+conda install -c conda-forge sacred
+conda install -c conda-forge matplotlib
+conda install -c conda-forge tqdm
+
+If using a Python version later than 3.7, you may potentially get an error with the |Sacred package. This can be manually fixed by changing the utils.py file in the sacred package:
+an example path for this file is
+
+anaconda3/envs/ccLoops/lib/python3.10/site-packages/sacred/utils.py
+
+In this file change collections.Mapping -> collections.abc.Mapping
+
