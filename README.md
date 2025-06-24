@@ -1,5 +1,5 @@
 # ccLoops: Cerebellar-driven cortical dynamics can enable task acquisition, switching and consolidation
-[[https://www.biorxiv.org/content/10.1101/2022.11.14.516257v1](https://www.nature.com/articles/s41467-024-55315-6)](https://www.nature.com/articles/s41467-024-55315-6).
+https://www.nature.com/articles/s41467-024-55315-6
 
 <img src="https://user-images.githubusercontent.com/35163856/202711207-297cb6db-2a4f-4b1f-989f-f76600c2d1ee.png" width="900">
 
